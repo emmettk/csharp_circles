@@ -31,7 +31,7 @@ public class Shapes
 					//bmp.SetPixel(Xcount,Ycount,Color.FromArgb(0,0,0));
 
 					//Small waves: Red varies with cosine, Green varies with sine, Blue varies with cosine
-					bmp.SetPixel(Xcount,Ycount,Color.FromArgb((int)(Math.Abs(Math.Cos(Xcount/100.0)*255)),(int)(Math.Abs(Math.Sin(Xcount/100.0)*255)),(int)(Math.Abs(Math.Cos(Ycount/100.0)*255))));
+					//bmp.SetPixel(Xcount,Ycount,Color.FromArgb((int)(Math.Abs(Math.Cos(Xcount/100.0)*255)),(int)(Math.Abs(Math.Sin(Xcount/100.0)*255)),(int)(Math.Abs(Math.Cos(Ycount/100.0)*255))));
 					
 					//Medium waves:  Red varies with sine, Green varies with cosine, Blue varies with cosine
 					//bmp.SetPixel(Xcount,Ycount,Color.FromArgb((int)(Math.Abs(Math.Sin(Xcount/200.0)*255)),(int)(Math.Abs(Math.Cos(Xcount/200.0)*255)),(int)(Math.Abs(Math.Cos(Ycount/200.0)*255))));
