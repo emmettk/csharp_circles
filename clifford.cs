@@ -6,13 +6,6 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-//using System.Windows.Media;
-//using System.Text;
-//using System.Printing;
-//using System.Internal;
-//using System.Imaging;
-//using System.Design;
-
 
 namespace DrawingShapes 
 {
@@ -26,6 +19,7 @@ namespace DrawingShapes
 			float zoom = 0.5f;
 			Bitmap bmp = new Bitmap(width,height);
 			Graphics g = Graphics.FromImage(bmp);
+			//Background color
 			g.FillRectangle(Brushes.Black, 0, 0, width, height);
 			
 			int trajectory_count = 3000;
@@ -72,39 +66,6 @@ namespace DrawingShapes
 
 				}
 			}
-//			for (int Xcount = 0; Xcount < bmp.Width; Xcount++)
-//			{
-//				for (int Ycount = 0; Ycount < bmp.Height; Ycount++)
-//				{
-//				//	bmp.SetPixel(Xcount, Ycount, Color.FromArgb(((Xcount-55)%256+256)%256,Ycount%256,(Xcount+Ycount)%256));
-////					if ((Math.Pow(Xcount,2)+Math.Pow(Ycount,2)) < (Math.Pow(100,2)))
-////					{
-////					       	bmp.SetPixel(Xcount,Ycount,Color.FromArgb(255,100,100));
-////					//	System.Console.WriteLine(Math.Pow(Xcount,2));
-////					}
-////					else bmp.SetPixel(Xcount,Ycount,Color.FromArgb(0,0,0));
-////
-//					if ((Math.Pow(Xcount-200,2)+Math.Pow(Ycount-200,2))<(Math.Pow(100,2)))
-//					{
-//					//	bmp.SetPixel(Xcount,Ycount,Color.FromArgb(255,0,0));
-//				//		bmp.SetPixel(Xcount, Ycount, Color.FromArgb(((Xcount-55)%256+256)%256,Ycount%256,(Xcount+Ycount)%256));
-//						bmp.SetPixel(Xcount,Ycount,Color.FromArgb(Xcount%256,Ycount%256,(Xcount+Ycount)%256));
-//				
-//					}
-//
-//					else if ((Math.Pow(Xcount-800,2)+Math.Pow(Ycount-800,2))<(Math.Pow(100,2)))
-//					{
-//					//	bmp.SetPixel(Xcount,Ycount,Color.FromArgb(255,0,0));
-//				//		bmp.SetPixel(Xcount, Ycount, Color.FromArgb(((Xcount-55)%256+256)%256,Ycount%256,(Xcount+Ycount)%256));
-//						bmp.SetPixel(Xcount,Ycount,Color.FromArgb(Xcount%256,Ycount%256,(Xcount+Ycount)%256));
-//				
-//					}
-//					else bmp.SetPixel(Xcount,Ycount,Color.FromArgb(0,0,0));
-//
-//				}
-//
-//			}
-
 
 			g.Dispose();
 			bmp.Save("clifford.png", System.Drawing.Imaging.ImageFormat.Png);
