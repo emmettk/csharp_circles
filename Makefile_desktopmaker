@@ -1,5 +1,6 @@
 #Simple makefile for C#
 #For desktopmaker code
+#Run in terminal with: make -f Makefile_desktopmaker
 
 all : desktop.png
 	
