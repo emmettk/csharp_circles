@@ -1,0 +1,15 @@
+#Simple makefile for C#
+#For desktopmaker code
+
+all : desktop.png
+	
+desktop.png: desktopmaker.cs
+	mcs  /reference:System.Drawing.dll /reference:System.Windows.Forms.dll desktopmaker.cs
+	mono desktopmaker.exe	
+	open desktop.png
+
+
+clean :
+	rm -f desktopmaker.exe desktopmaker
+
+.PHONY : build clean
