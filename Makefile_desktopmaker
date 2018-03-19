@@ -1,4 +1,4 @@
-#Simple makefile for C#
+#Simple makefile for C# using mcs and mono to compile
 #For desktopmaker code
 #Run in terminal with: make -f Makefile_desktopmaker
 
