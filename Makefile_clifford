@@ -1,0 +1,16 @@
+#Simple makefile for C#
+#For clifford extractor
+#Run in terminal with: make -f Makefile_clifford
+
+all : clifford.png
+	
+clifford.png: clifford.cs
+	mcs  /reference:System.Drawing.dll /reference:System.Windows.Forms.dll clifford.cs
+	mono clifford.exe	
+	open clifford.png
+
+
+clean :
+	rm -f clifford.exe clifford
+
+.PHONY : build clean
